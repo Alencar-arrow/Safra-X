@@ -1,5 +1,5 @@
 .contact-hero {
-    padding: 50px 20px;
+    padding: 50px;
     background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55));
     text-align: center;
     color: var(--white);
@@ -7,7 +7,7 @@
 
 .contact-hero h1 {
     color: var(--white);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .contact-hero p {
@@ -16,7 +16,7 @@
 
 .contact-form {
     max-width: 500px;
-    margin: 40px auto;
+    margin: 0px auto;
     padding: 30px;
     background-color: var(--light-bg);
     border: 2px solid var(--secondary-color);
