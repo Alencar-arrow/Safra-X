@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fale com o projeto SafraX e faça sua inscrição de visita.">
+    <title>Contato — SafraX</title>
+    <link rel="stylesheet" href="/css/principal.css">
+    <script src="/js/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="/html/index.html" class="logo">
+                🌱 SafraX
+            </a>
+
+            <div class="hamburger" id="hamburger" aria-label="Abrir Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/html/index.html" class="nav-link">Início</a></li>
+                <li><a href="/html/galeria.html" class="nav-link">Galeria</a></li>
+                <li><a href="/html/sobre.html" class="nav-link">Sobre</a></li>
+                <li><a href="/html/projetos.html" class="nav-link">Projetos</a></li>
+                <li><a href="/html/impacto.html" class="nav-link">Impacto</a></li>
+                <li><a href="/html/acessibilidade.html" class="nav-link">Acessibilidade</a></li>
+                <li><a href="/html/midia.html" class="nav-link">Mídia</a></li>
+                <li><a href="/html/noticias.html" class="nav-link">Notícias</a></li>
+                <li><a href="/html/contato.html" class="nav-link">Contato</a></li>
+                <li><a href="/html/orcamento_hospedagem.html" class="nav-link">Hospedagem</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="contact-hero">
+        <h1>Fale com a gente</h1>
+        <p>Quer apoiar o SafraX? Conte como você gostaria de ajudar e retornamos o quanto antes.</p>
+    </section>
+
+    <main class="container">
+        <form class="contact-form" action="/processar_contato" method="post">
+
+            <label for="nome">Nome completo</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Telefone (opcional)</label>
+            <input type="tel" id="telefone" name="telefone">
+
+            <label for="ajuda">Como você gostaria de ajudar?</label>
+            <select id="ajuda" name="ajuda" required>
+                <option value="">Selecione uma opção</option>
+                <option value="doacao">Fazer uma doação</option>
+                <option value="voluntariado">Ser voluntário</option>
+                <option value="parceria">Propor uma parceria</option>
+                <option value="divulgacao">Ajudar na divulgação</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Conte um pouco sobre como você quer contribuir" rows="4" required></textarea>
+
+            <label class="checkbox-label">
+                <input type="checkbox" name="newsletter">
+                Quero receber novidades do projeto por e-mail
+            </label>
+
+            <button type="submit">Enviar mensagem</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Projeto SafraX — Sustentabilidade & Preservação Florestal. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
