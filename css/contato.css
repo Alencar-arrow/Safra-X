@@ -11,7 +11,7 @@
 }
 
 .contact-hero p {
-    color: var(--font-main)
+    color: var(--secondary-color);
 }
 
 .contact-form {
