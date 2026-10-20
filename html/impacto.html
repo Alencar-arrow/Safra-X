@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entenda os impactos da expansão urbana sobre os ecossistemas e acompanhe a jornada de uma semente até a floresta.">
+    <title>Impacto ambiental — SafraX</title>
+    <link rel="stylesheet" href="../css/principal.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body class="page-impacto">
+
+    <header>
+        <nav class="navbar" aria-label="Navegação principal">
+            <a href="index.html" class="logo">🌱 SafraX</a>
+
+            <button class="hamburger" id="hamburger" type="button" aria-label="Abrir menu" aria-controls="nav-menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Início</a></li>
+                <li><a href="galeria.html" class="nav-link">Galeria</a></li>
+                <li><a href="sobre.html" class="nav-link">Sobre</a></li>
+                <li><a href="projetos.html" class="nav-link">Projetos</a></li>
+                <li><a href="impacto.html" class="nav-link active" aria-current="page">Impacto</a></li>
+                <li><a href="acessibilidade.html" class="nav-link">Acessibilidade</a></li>
+                <li><a href="midia.html" class="nav-link">Mídia</a></li>
+                <li><a href="noticias.html" class="nav-link">Notícias</a></li>
+                <li><a href="contato.html" class="nav-link">Contato</a></li>
+                <li><a href="orcamento_hospedagem.html" class="nav-link">Hospedagem</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>O impacto de crescer sem esquecer a natureza</h1>
+            <p>Entenda como a expansão das cidades afeta os ecossistemas e por que cada área natural protegida importa.</p>
+        </div>
+    </section>
+
+    <main>
+        <div class="container">
+            <section class="intro" aria-labelledby="impactos-title">
+                <h2 id="impactos-title">Quando a cidade avança, o ambiente sente</h2>
+                <p>
+                    A ocupação urbana sem planejamento pode transformar paisagens, fragmentar habitats
+                    e pressionar recursos naturais. Esses efeitos estão conectados e também influenciam
+                    o bem-estar de quem vive nas cidades.
+                </p>
+            </section>
+
+            <section class="grid-cards" aria-label="Principais impactos ambientais da expansão urbana">
+                <article class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Biodiversidade e habitats</h3>
+                        <p class="card-text">
+                            A perda e a fragmentação de áreas naturais reduzem os espaços disponíveis
+                            para que plantas e animais encontrem alimento, abrigo e condições para viver.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Solo e água</h3>
+                        <p class="card-text">
+                            A remoção da vegetação e a impermeabilização do solo alteram a absorção da
+                            água e podem aumentar a pressão sobre rios e mananciais.
+                        </p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Clima e qualidade de vida</h3>
+                        <p class="card-text">
+                            Áreas verdes ajudam a amenizar o calor e oferecem espaços importantes
+                            para o convívio e o bem-estar nas cidades.
+                        </p>
+                    </div>
+                </article>
+            </section>
+        </div>
+
+        <section class="tree-growth-section" aria-label="A importância da semente e o crescimento de uma árvore">
+            <div class="tree-growth-scene">
+                <svg class="tree-growth" viewBox="0 0 400 400" role="img" aria-label="Animação passo a passo de uma semente se tornando uma árvore e uma floresta">
+                    <ellipse cx="200" cy="362" rx="175" ry="14" fill="#07140a"/>
+                    <ellipse class="tree-seed" cx="200" cy="352" rx="8" ry="6" fill="#c8a574"/>
+                    <rect class="tree-trunk" x="192" y="185" width="16" height="170" rx="6" fill="#8d6e63"/>
+                    <circle class="tree-canopy tree-canopy-center" cx="200" cy="165" r="70" fill="#2e7d32"/>
+                    <circle class="tree-canopy tree-canopy-left" cx="148" cy="212" r="50" fill="#388e3c"/>
+                    <circle class="tree-canopy tree-canopy-right" cx="252" cy="208" r="52" fill="#43a047"/>
+                    <circle class="tree-canopy tree-canopy-top" cx="200" cy="118" r="44" fill="#66bb6a"/>
+                    <polygon class="tree-forest tree-forest-left" points="40,360 18,360 29,296" fill="#2e7d32"/>
+                    <polygon class="tree-forest tree-forest-mid-left" points="92,360 68,360 80,290" fill="#388e3c"/>
+                    <polygon class="tree-forest tree-forest-mid-right" points="332,360 308,360 320,290" fill="#388e3c"/>
+                    <polygon class="tree-forest tree-forest-right" points="382,360 360,360 371,296" fill="#2e7d32"/>
+                </svg>
+                <div class="tree-growth-copy">
+                    <p class="tree-growth-eyebrow">Da semente à floresta</p>
+                    <h2>Pequenas origens sustentam grandes ecossistemas.</h2>
+                    <p class="tree-growth-instruction">Role a página para acompanhar cada etapa.</p>
+                    <div class="tree-growth-progress" role="progressbar" aria-label="Progresso do crescimento da árvore" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+                        <span></span>
+                    </div>
+                    <p class="tree-growth-step-count" aria-hidden="true">01 <span>/ 04</span></p>
+                    <div class="tree-growth-steps" aria-live="polite" aria-atomic="true">
+                        <p class="is-active">Toda floresta começa com uma semente: pequena, mas cheia de potencial para gerar vida.</p>
+                        <p>Com água, luz e cuidado, a semente cria raízes e encontra força para crescer.</p>
+                        <p>Uma árvore adulta oferece abrigo, protege o solo e contribui para o equilíbrio do clima.</p>
+                        <p>Proteger sementes e árvores hoje é cuidar da biodiversidade e das florestas do futuro.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+            <section class="intro" aria-labelledby="protecao-title">
+                <h2 id="protecao-title">Proteger também é planejar</h2>
+                <p>
+                    O desenvolvimento urbano pode considerar as características do território e preservar
+                    os ambientes naturais dos quais as comunidades também dependem.
+                </p>
+            </section>
+
+            <section class="grid-cards" aria-label="Ações para conciliar cidades e natureza">
+                <article class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Planejar a ocupação</h3>
+                        <p class="card-text">Considerar rios, áreas verdes e habitats naturais nas decisões sobre o crescimento urbano.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Conectar áreas verdes</h3>
+                        <p class="card-text">Valorizar parques e corredores verdes para aproximar a natureza das comunidades.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Informar e participar</h3>
+                        <p class="card-text">Acompanhar informações ambientais e participar das conversas sobre o futuro da cidade.</p>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Projeto SafraX — Sustentabilidade &amp; Preservação Florestal. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
