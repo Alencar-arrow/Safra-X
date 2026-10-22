@@ -5,6 +5,7 @@
 @import url(footer.css);
 @import url(responsibilidade.css);
 @import url(contato.css);
+@import url(galeria.css);
 
 * {
     margin: 0;
@@ -28,4 +29,10 @@ body {
     --white: #ffffff;
     --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --max-width: 1200px;
+    --verde-escuro: #1b4332;
+    --verde: #2d6a4f;
+    --verde-claro: #d8f3dc;
+    --terra: #8d6e4c;
+    --texto: #1f2a24;
+    --branco: #ffffff;
 }

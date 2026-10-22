@@ -1,224 +1,78 @@
-.page-galeria .hero {
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-        url('https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=1600&q=80') center 45% / cover no-repeat;
+
+
+html { scroll-behavior: smooth; }
+
+main { width: 100%; }
+
+section {
+  background: var(--branco);
+  padding: 3.5rem max(1rem, calc((100% - 1000px) / 2));
+  border-bottom: 4px solid var(--terra);
+  scroll-margin-top: 3.5rem;
 }
 
-.page-galeria .hero-content {
-    max-width: 850px;
+section:nth-of-type(even) { background: var(--verde-claro); }
+
+section:last-of-type { border-bottom: none; }
+
+section h2 {
+  color: var(--verde-escuro);
+  margin-bottom: .8rem;
+  border-left: 5px solid var(--terra);
+  padding-left: .7rem;
 }
 
-.page-galeria .hero p {
-    margin-bottom: 0;
+figure { margin: 1rem 0; }
+
+figure img {
+  width: 100%;
+  height: auto;
+  max-height: 380px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  transition: background-color 0.3s;
 }
 
-.page-galeria .container {
-    padding-top: 3.5rem;
+.imagens{
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.page-galeria .intro {
-    margin-bottom: 2.5rem;
+ .imagens:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);    
 }
 
-.page-galeria .grid-cards {
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
-    gap: 1.5rem;
+figcaption {
+  font-size: .9rem;
+  color: #555;
+  margin-top: .4rem;
+  font-style: italic;
+  transition: background-color 0.3s;
 }
 
-.page-galeria .card {
-    border: 1px solid rgba(46, 125, 50, 0.1);
+.grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
 }
 
-.page-galeria .card-img {
-    height: 230px;
+.grade figure { margin: 0; }
+.grade img { height: 220px; }
+
+ul.lista { padding-left: 1.4rem; margin-top: .5rem; }
+
+footer {
+  background: var(--verde-escuro);
+  color: var(--branco);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  font-size: .9rem;
 }
 
-.page-galeria .card-text {
-    margin-bottom: 1rem;
-}
-
-.page-galeria .card-text + .card-text {
-    margin-top: auto;
-    margin-bottom: 0;
-    padding: 0.75rem;
-    border-left: 3px solid var(--secondary-color);
-    background-color: var(--light-bg);
-    color: #555555;
-    font-size: 0.85rem;
-}
-
-.page-galeria .environment-carousel {
-    margin-top: 3rem;
-    padding: 2.5rem;
-    overflow: hidden;
-    border-radius: 12px;
-    background: var(--light-bg);
-}
-
-.page-galeria .carousel-heading {
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-
-.page-galeria .carousel-eyebrow {
-    margin-bottom: 0.35rem;
-    color: var(--primary-color);
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-}
-
-.page-galeria .carousel-heading h2 {
-    color: var(--text-color);
-    font-size: 2rem;
-}
-
-.page-galeria .carousel-viewport {
-    display: grid;
-    position: relative;
-    overflow: hidden;
-    border-radius: 10px;
-    background: #1b2b1d;
-}
-
-.page-galeria .carousel-slide {
-    grid-area: 1 / 1;
-    position: relative;
-    min-height: 380px;
-    opacity: 0;
-    color: var(--white);
-    transition: opacity 1.4s cubic-bezier(0.22, 1, 0.36, 1);
-    will-change: opacity;
-}
-
-.page-galeria .carousel-slide.is-active {
-    opacity: 1;
-}
-
-.page-galeria .carousel-slide[hidden] {
-    display: none;
-}
-
-.page-galeria .carousel-slide img {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transform: scale(1.08);
-}
-
-.page-galeria .carousel-slide.is-active img {
-    animation: carousel-image-settle 6.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-.page-galeria .carousel-slide::after {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.08));
-    content: "";
-}
-
-.page-galeria .carousel-caption {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    min-height: 380px;
-    max-width: 650px;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 3rem;
-    opacity: 0;
-    transform: translateY(24px);
-    transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
-        transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
-    transition-delay: 0.12s;
-}
-
-.page-galeria .carousel-slide.is-active .carousel-caption {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.page-galeria .carousel-number {
-    margin-bottom: 0.8rem;
-    color: #c8e6c9;
-    font-size: 0.9rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-}
-
-.page-galeria .carousel-caption h3 {
-    margin-bottom: 0.75rem;
-    font-size: clamp(1.7rem, 4vw, 2.5rem);
-    line-height: 1.15;
-}
-
-.page-galeria .carousel-caption p {
-    max-width: 520px;
-    font-size: 1.05rem;
-}
-
-@keyframes carousel-image-settle {
-    to {
-        transform: scale(1);
-    }
-}
+footer a { color: var(--verde-claro); }
 
 @media (max-width: 600px) {
-    .page-galeria .container {
-        padding: 2.5rem 1rem;
-    }
-
-    .page-galeria .grid-cards {
-        grid-template-columns: 1fr;
-        gap: 1.25rem;
-    }
-
-    .page-galeria .card-img {
-        height: 210px;
-    }
-
-    .page-galeria .environment-carousel {
-        padding: 1.25rem;
-    }
-
-    .page-galeria .carousel-heading h2 {
-        font-size: 1.65rem;
-    }
-
-    .page-galeria .carousel-slide,
-    .page-galeria .carousel-caption {
-        min-height: 330px;
-    }
-
-    .page-galeria .carousel-caption {
-        padding: 1.5rem;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .page-galeria .card {
-        transition: none;
-    }
-
-    .page-galeria .card:hover {
-        transform: none;
-    }
-
-    .page-galeria .carousel-slide {
-        transition: none;
-    }
-
-    .page-galeria .carousel-slide img {
-        animation: none !important;
-        transform: none;
-    }
-
-    .page-galeria .carousel-caption {
-        transform: none;
-        transition: none;
-    }
+  header h1 { font-size: 1.5rem; }
 }

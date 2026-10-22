@@ -1,6 +1,6 @@
  .info {
             background-color: var(--light-bg);
-            border-left: 20px solid var(--primary-color);
+            border-left: 10px solid var(--primary-color);
             padding: 2rem;
             border-radius: 6px;
             margin: 2rem 0;
